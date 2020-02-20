@@ -26,5 +26,11 @@ public class LeapYearShould {
 
         assertEquals(false, leapYear.isLeapYear(2001));
     }
+    @Test
+    public void return_true_if_800_is_a_leap_year(){
 
+        LeapYear leapYear = new LeapYear();
+
+        assertEquals(true, leapYear.isLeapYear(2001));
+    }
 }
