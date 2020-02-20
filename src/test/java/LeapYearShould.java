@@ -32,7 +32,7 @@ public class LeapYearShould {
 
         LeapYear leapYear = new LeapYear();
 
-        assertEquals(true, leapYear.isLeapYear(2001));
+        assertEquals(false, leapYear.isLeapYear(2001));
     }
 
     @Test
