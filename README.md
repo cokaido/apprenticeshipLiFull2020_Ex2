@@ -11,6 +11,6 @@ We want to know if a year is a Leap Year. If this year is Leap year we will add 
 3. All years divisible by 4 not by 100 are leap years.
 4. All years not divisible by 4 are not leap years.
 
-Language use is Java 4. 
-JUnit version 11 with maven.
+Language use is Java 11. 
+JUnit  version 5.4 with maven.
 
