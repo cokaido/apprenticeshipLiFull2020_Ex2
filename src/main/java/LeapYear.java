@@ -2,8 +2,12 @@ public class LeapYear {
 
     public boolean isLeapYear(int year){
 
-        return isNotMultipleOf400(year);
+        boolean isLapYear = false;
+        isLapYear = isNotMultipleOf400(year);
+        if(!isLapYear)
+            isLapYear= isMultipleOf(year,4) && !isMultipleOf(year,100);
 
+        return isLapYear;
     }
 
     private boolean isNotMultipleOf400(int year) {
