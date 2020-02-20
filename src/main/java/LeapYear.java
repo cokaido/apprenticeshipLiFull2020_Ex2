@@ -2,26 +2,17 @@ public class LeapYear {
 
     public boolean isLeapYear(int year){
 
-        boolean result = isNotMultipleOf400(year);
-
-        return result;
+        return isNotMultipleOf400(year);
 
     }
 
     private boolean isNotMultipleOf400(int year) {
-        if(isMultipleOf(year,400)){
-            return true;
-        }
-        return false;
+        return isMultipleOf(year, 400);
     }
 
-    private boolean isMultipleOf(int num, int divisibleNum) {
+    private boolean isMultipleOf(int year, int divisibleNumber) {
 
-        if((num % divisibleNum) == 0){
-
-            return true;
-        }
-        return false;
+        return (year % divisibleNumber) == 0;
     }
 
 
